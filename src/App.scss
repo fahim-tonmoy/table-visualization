@@ -1,0 +1,148 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background: red;
+  background: #6a6a6a;
+  width: 100%;
+  height: 100vh;
+}
+/* Login */
+.dashboard_login_wrapper{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .dashboard_login{
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    // background-color: aqua;
+    background-color: #fff;
+    border: 1px solid rgba(170, 170, 170, 0.577);
+    border-radius: 8px;
+    padding: 20px 30px;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      input {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid rgba(170, 170, 170, 0.577);
+        outline: none;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 16px;
+        color: #fff;
+        background-color: rgb(1, 98, 75);
+        cursor: pointer;
+      }
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}
+
+// table
+
+.leads-data-table {
+  padding: 30px 0;
+}
+
+.rs-picker-default .rs-picker-toggle.rs-btn{
+  height: 45px;
+  padding-top: 10px !important;
+}
+.rs-picker-toggle-caret {
+  padding-top: 4px;
+}
+.rs-picker-menu{
+  z-index: 9999 !important;
+  left: 60% !important;
+  top: 50px !important;
+}
+
+.rdt_Table
+.rdt_TableHead{
+  z-index: 99;
+}
+
+.table-topbar{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  .search-component {
+    &__input {
+      width: 200px;
+      height: 44px;
+      outline: none;
+      padding: 8px 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+  }
+  .select-component{
+    width: 200px;
+    .react-select-component__control{
+      height: 44px;
+    }
+    .react-select-component__menu{
+      z-index: 999;
+    }
+  }
+  .filter-reset-btn{
+    padding: 10px 16px;
+    color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    cursor: pointer;
+  }
+}
+.table-action-controls{
+  display: flex;
+  gap: 20px;
+  span {
+    cursor: pointer;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.lead-assigns {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: -10px;
+  .lead-assign{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    &:nth-child(n+1) {
+      margin-left: -8px;
+      z-index: 9;
+    }
+  }
+}
